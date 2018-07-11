@@ -31,7 +31,8 @@ def run():
 
         if energy > energy_threshold:
             state = True
-        else state = False
+        else:
+            state = False
 
         if debug:
             print('Energy: {:<10}Frame Rate: {}'.format(energy, 1/(time.time()-t)))
