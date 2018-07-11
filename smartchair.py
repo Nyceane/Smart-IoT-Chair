@@ -20,9 +20,11 @@ def run():
     # Set image filter
     WalabotAPI.SetDynamicImageFilter(WalabotAPI.FILTER_TYPE_MTI)
     WalabotAPI.SetThreshold(35)
+    print("Start Scan")
 
     # Start scan
     WalabotAPI.Start()
+    print("Passed")
 
     t = time.time()
     while True:
