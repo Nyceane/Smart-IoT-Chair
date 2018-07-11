@@ -28,9 +28,13 @@ def run():
 
     t = time.time()
     while True:
-        WalabotAPI.Trigger()
-        energy = WalabotAPI.GetImageEnergy() * 1000
+        print("Triggering")
 
+        WalabotAPI.Trigger()
+        print("2nd")
+
+        energy = WalabotAPI.GetImageEnergy() * 1000
+        print("3rd")
         if energy > energy_threshold:
             state = True
         else:
