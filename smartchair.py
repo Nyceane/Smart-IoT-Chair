@@ -32,7 +32,7 @@ def run():
 
         WalabotAPI.Trigger()
         print("2nd")
-        WalabotAPI.GetImageSlice()
+        WalabotAPI.GetRawImageSlice()
         energy = WalabotAPI.GetImageEnergy() * 1000
         print("3rd")
         
