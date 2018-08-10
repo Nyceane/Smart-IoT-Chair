@@ -35,12 +35,12 @@ def run():
         WalabotAPI.GetImageSlice()
         energy = WalabotAPI.GetImageEnergy() * 1000
         print("3rd")
-        /*
+        
         if energy > energy_threshold:
             state = True
         else:
             state = False
-                */
+
         if debug:
             print('Energy: {:<10}Frame Rate: {}'.format(energy, 1/(time.time()-t)))
             t = time.time()
